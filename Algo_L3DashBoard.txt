@@ -1,0 +1,24 @@
+defectDetailsMap  ,defectDetailsList
+mailDetailsMap,mailDetailsList
+highlightsDetailsMap,highlightsDetailsList
+piDetailsMap,piDetailsList
+monthlyTicketDetailsMap,monthlyTicketDetailsList
+categoryViseTicketDetailsMap,categoryViseTicketDetailsList
+competencyDetailsMap,competencyDetailsList
+barGraphDetailsMap,barGraphDetailsList
+
+============================
+1.on file read logic make all map
+2.header and iterate each map 
+3.heading table
+============================
+
+
+readFileData()=All map created here
+writeFileData(map,document)======>>> For Loop
+createHeader(document)==>>Condition statement
+createStyledTable(map,document)
+
+============================
+
+

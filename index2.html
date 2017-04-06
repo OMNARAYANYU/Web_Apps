@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>React! React! React!</title>
+<link rel="stylesheet" type="text/css" href="main2.css">
+<script src="http://fb.me/react-0.10.0.min.js"></script>
+<script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<script src="http://fb.me/react-0.13.0.js"></script>
+<script src="http://fb.me/JSXTransformer-0.13.1.js"></script>
+
+</head>
+ 
+<body>
+  <div id="app"></div>
+ <script type="text/jsx">
+	var SampleReact = React.createClass({
+		render: function(){
+var services = [
+    { 'task' : 'task1', 'resource':  ['john','jimmy'],'start':'25-08-15','end':'25-09-15','utillization':50 },
+    { 'task' : 'task2', 'resource':  ['john','jimmy'],'start':'25-08-15','end':'25-09-15','utillization':50 },
+    { 'task' : 'task3', 'resource':  ['john'],'start':'25-08-15','end':'25-09-15','utillization':50 },
+    { 'task' : 'task4', 'resource':  ['sara'],'start':'25-08-15','end':'25-09-15','utillization':50 },
+    { 'task' : 'task5', 'resource':  ['hg','hb'],'start':'25-08-15','end':'25-09-15','utillization':50 },
+    { 'task' : 'task6', 'resource':  ['hg'],'start':'25-08-15','end':'25-09-15','utillization':50 }
+];
+var individual1 = [ { 'name1' : 'John' } ];
+var individual2 = [ { 'name1' : 'Jimmy' } ];
+var individual3 = [ { 'name1' : 'Sara' } ];
+var individual4 = [ { 'name1' : 'Hg' } ];
+var individual5 = [ { 'name1' : 'Hb' } ];
+
+var task1 = [ { 'task' : 'task1'} ];
+var task2 = [ { 'task' : 'task2'} ];
+var task3 = [ { 'task' : 'task3'} ];
+var task4 = [ { 'task' : 'task4'} ];
+var task5 = [ { 'task' : 'task5'} ];
+var task6 = [ { 'task' : 'task6'} ];
+
+var task1time = [ { 'task' : '4'}, {'task' : '4'}, {'task' : '4'}, {'task' : '4'}, {'task' : '4' } ];
+var task2time = [ { 'task' : '0'}, {'task' : '0'}, {'task' : '0'}, {'task' : '0'}, {'task' : '0' } ];
+var task3time = [ { 'task' : '0'}, {'task' : '4'}, {'task' : '4'}, {'task' : '4'}, {'task' : '4' } ];
+var task4time = [ { 'task' : '0'}, {'task' : '0'}, {'task' : '0'}, {'task' : '0'}, {'task' : '0' } ];
+var task5time = [ { 'task' : '0'}, {'task' : '0'}, {'task' : '0'}, {'task' : '0'}, {'task' : '0' } ];
+var task6time = [ { 'task' : '0'}, {'task' : '0'}, {'task' : '0'}, {'task' : '0'}, {'task' : '0' } ];
+
+
+var johnWork = [ {'resource' : 'john', 'date1' : '8'},{'resource' : 'john', 'date1' : '8'},{'resource' : 'john', 'date1' : '8'},{'resource' : 'john', 'date1' : '8'},{'resource' : 'john', 'date1' : '8'}  ];
+var jimmyWork = [ {'resource' : 'john', 'date1' : '4'},{'resource' : 'john', 'date1' : '4'},{'resource' : 'john', 'date1' : '4'},{'resource' : 'john', 'date1' : '4'},{'resource' : 'john', 'date1' : '8'}  ];
+var saraWork = [ {'resource' : 'john', 'date1' : '0'},{'resource' : 'john', 'date1' : '0'},{'resource' : 'john', 'date1' : '0'},{'resource' : 'john', 'date1' : '0'},{'resource' : 'john', 'date1' : '0'}  ];
+var hgWork = [ {'resource' : 'john', 'date1' : '0'},{'resource' : 'john', 'date1' : '0'},{'resource' : 'john', 'date1' : '0'},{'resource' : 'john', 'date1' : '0'},
+{'resource' : 'john', 'date1' : '0'}  ];
+var hbWork = [ {'resource' : 'john', 'date1' : '0'},{'resource' : 'john', 'date1' : '0'},{'resource' : 'john', 'date1' : '0'},{'resource' : 'john', 'date1' : '0'},
+{'resource' : 'john', 'date1' : '0'}  ];
+
+var month = [ {'date1' : '25Aug'}, {'date1' : '26Aug'}, {'date1' : '27Aug'}, {'date1' : '28Aug'}, {'date1' : '29Aug'}, {'date1' : '30Aug'} ];
+
+
+var time = [ {'worktime' : '8'}, {'worktime' : '8'}, {'worktime' : '8'}, {'worktime' : '8'} ];
+var tasktime = [ {'tasktime' : '4'}, {'tasktime' : '4'}, {'tasktime' : '4'}, {'tasktime' : '8'} ];
+
+
+var task1time1 = task1time.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+var task2time1 = task2time.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+var task3time1 = task3time.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+var task4time1 = task4time.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+var task5time1 = task5time.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+var task6time1 = task6time.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+
+
+        var namelist1 = individual1.map(function(row){
+			 return <td>
+                               {row.name1}</td>
+
+		 });
+        var namelist2 = individual2.map(function(row){
+			 return <td>
+                               {row.name1}</td>
+
+		 });
+        var namelist3 = individual3.map(function(row){
+			 return <td>
+                               {row.name1}</td>
+
+		 });
+        var namelist4 = individual4.map(function(row){
+			 return <td>
+                               {row.name1}</td>
+
+		 });
+       var namelist5 = individual5.map(function(row){
+			 return <td>
+                               {row.name1}</td>
+
+		 });
+       var tasklist1 = task1.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+       var tasklist2 = task2.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+      var tasklist3 = task3.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+      var tasklist4 = task4.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+      var tasklist5 = task5.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+      var tasklist6 = task6.map(function(row){
+			 return <td>
+                               {row.task}</td>
+
+		 });
+
+	var johnWork1 = johnWork.map(function(row){
+			 return <td>
+                               {row.date1}</td>
+
+		 });
+        var jimmyWork1 = jimmyWork.map(function(row){
+			 return <td>
+                               {row.date1}</td>
+
+		 });
+        var saraWork1 = saraWork.map(function(row){
+			 return <td>
+                               {row.date1}</td>
+
+		 });
+        var hgWork1 = hgWork.map(function(row){
+			 return <td>
+                               {row.date1}</td>
+
+		 });
+        var hbWork1 = hbWork.map(function(row){
+			 return <td>
+                               {row.date1}</td>
+
+		 });
+
+	 var months = month.map(function(col){
+		        return <th>
+                            {col.date1} </th>
+
+		         });
+
+			 
+
+	return  <table>
+		<thead>
+		<th>ResourceName</th>
+	        {months}
+                </thead>
+                <tr class = "foo" ><b>{namelist1}{johnWork1}</b></tr>
+                <tr>{tasklist1}{task1time1}</tr>
+                <tr>{tasklist2}{task2time1}</tr>
+                <tr>{tasklist3}{task3time1}</tr>
+                <tr>{namelist2}{jimmyWork1}</tr>
+                <tr>{tasklist1}{task1time1}</tr>
+                <tr>{tasklist2}{task2time1}</tr>
+                <tr>{namelist3}{saraWork1}</tr>
+                <tr>{tasklist4}{task4time1}</tr>
+                <tr>{namelist4}{hgWork1}</tr>
+                <tr>{tasklist5}{task5time1}</tr>
+                <tr>{tasklist6}{task6time1}</tr>
+                <tr>{namelist5}{hbWork1}</tr>
+                <tr>{tasklist6}{task6time1}</tr>
+
+
+
+
+	        </table>
+						
+		}
+	});
+	
+	React.render(React.createElement(SampleReact), document.getElementById("app"));
+</script>
+
+</body>
+ 
+</html>

@@ -20,27 +20,5 @@ createHeader(document)==>>Condition statement
 createStyledTable(map,document)
 Test Added
 ============================
-<<<<<<< Updated upstream
-Master Override test
+
 Master ADd
-=======
-
-
-
-Master Override test
-
-
-Test Check from Test Branch
-
-
-=======
-Master ADd
-
-=======
-Test Check from Test Branch
-
-
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes

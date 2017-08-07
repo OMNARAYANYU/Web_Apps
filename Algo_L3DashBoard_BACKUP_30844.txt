@@ -18,29 +18,17 @@ readFileData()=All map created here
 writeFileData(map,document)======>>> For Loop
 createHeader(document)==>>Condition statement
 createStyledTable(map,document)
-Test Added
+Test #%$^46Added
 ============================
-<<<<<<< Updated upstream
+<<<<<<< HEAD
 Master Override test
-Master ADd
 =======
 
-
-
-Master Override test
-
-
+<<<<<<< HEAD
 Test Check from Test Branch
 
 
 =======
+>>>>>>> fcff938530d2557da19cd8ab35180fb04a1efe59
 Master ADd
-
-=======
-Test Check from Test Branch
-
-
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+>>>>>>> 5d6497dabc23f95dc3b45b48b37133b7071273e2

@@ -21,6 +21,10 @@ createStyledTable(map,document)
 Test #%$^46Added
 ============================
 
+<<<<<<< HEAD
 Test Check from Test Branch
 
 
+=======
+Master ADd
+>>>>>>> 5d6497dabc23f95dc3b45b48b37133b7071273e2
